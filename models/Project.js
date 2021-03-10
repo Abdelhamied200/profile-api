@@ -42,7 +42,7 @@ const Project = new Schema({
     default: Date.now,
   },
   old: {
-    git: {
+    tag: {
       type: String,
     },
     date: {

@@ -11,7 +11,7 @@ module.exports = {
     Project.find((err, data) => {
       if (err) res.json({ ...status[500], data: err });
       if (data) res.json({ ...status[200], data });
-    });
+    }).sort("-date");
   },
   create: (req, res) => {
     let data = req.body;
